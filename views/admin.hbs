@@ -1,0 +1,49 @@
+<br/>
+<br/>
+<div class="container mt-4">
+    <main role="main">
+        <div class="row">
+            <div class="col">
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1>Orders</h1>
+                <div class="table-responsive-sm">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th></th>
+                                <th></th>
+                                <th>Order</th>
+                                <th></th>
+                                <th></th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each order}}
+                            <tr>
+                                <td>{{order._id}}</td>
+                                <td></td>
+                                <td></td>
+                                <td>{{order.order}}</td>
+                                <td></td>
+                                <td></td>
+                                <td>{{order.total}}</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a class="btn btn-primary" href="/order/{{this._id}}">Update</a>
+                                    <a class="btn btn-danger" href="/order/delete/{{this._id}}">Delete</a>
+                                </td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

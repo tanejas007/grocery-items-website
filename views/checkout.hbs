@@ -1,0 +1,43 @@
+<br><br><br>
+<div class="checkout">
+        <h1><b><i>CheckOut</i></b></h1>
+        <h6> Please Fill Following Information</h6>
+        <div id="charge-error" class="alert alert-danger {{#if noError}} hidden {{/if}}">
+            {{errMsg}}
+        </div>
+        <form action="/cart" method="post" id="checkout-form">
+                <div class="card_name">
+                        <label for="card-name">Card Holder Name*</label><br/>
+                        <input type="text" id="card-name" name="card_name" size="45" required>
+                </div>
+                <div class="card_number">
+                        <label for="card-number">Credit Card Number*</label><br/>
+                        <input type="text" id="card-number" name="card_number" size="45" required>
+                </div>
+                <div class="card_expiry">
+                        <label for="card-expiry-month">Expiration Month*</label><br/>
+                        <input type="text" id="card-expiry-month" name="card_expiry" size="45" required>
+                </div>
+                <div class="card_year">
+                        <label for="card-expiry-year">Expiration Year*</label><br/>
+                        <input type="text" id="card-expiry-year" name ="card_year" size="45" required>
+                </div>
+                <div class="cvc">
+                        <label for="card-cvc">CVC*</label><br/>
+                        <input type="text" id="card-cvc" name ="cvc" size="45" required>
+                </div><br/>
+            <button type="submit" class="btn btn-success"><b>Place Order</b></button>
+        </form>
+        <br><br>
+        <div class="or">
+                <b>OR</b>
+        </div>
+        <br>
+        <div class="cash">
+                <a href="/cash"  type="button"><b>Cash On Delivery</b></a>
+        </div>
+</div>
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="/js/checkout.js"></script>
+<script type="text/javascript" src="/js/cart.js"></script>

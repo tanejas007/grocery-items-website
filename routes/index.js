@@ -23,8 +23,10 @@ router.use(session({
     // cookie: {maxAge: 180 * 60 * 1000}
 }));
 mongoose.set('useFindAndModify',false);
-
-router.get('/',(req,res)=>{
+router.get('/',(req , res)=>{
+    res.sendFile(__dirname + '/index.html');
+});
+router.get('/menu',(req,res)=>{
     res.render('menu');
 });
 router.get('/user/profile', isLoggedIn, function(req, res, next){
@@ -38,9 +40,9 @@ router.use('/', notLoggedIn, function(req, res, next){
     next();
 });
 
-router.get('/menu',(req,res)=>{
-    res.render('menu');
-});
+// router.get('/menu',(req,res)=>{
+//     res.render('menu');
+// });
 // router.use(csrfProtection);
 router.get('/cart',(req,res)=>{
     res.render('cart');

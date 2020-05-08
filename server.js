@@ -7,20 +7,21 @@ var exphbs = require('express-handlebars');
 var bodyparser = require('body-parser');
 var passport = require('passport');
 var session = require('express-session');
+var MemoryStore = require('memorystore')(session);
 var flash = require('connect-flash');
 var validator = require('express-validator');
 var favicon = require('serve-favicon');
 var MongoStore = require('connect-mongo')(session);
 var index = require('./routes/index');
 // var user = require('./controller/user');
-
+var port = process.env.PORT || 5000
 var app = express();
 app.use(session({
-    secret: 'mysupersecret',
+    secret: 'keyboard cat',
     resave: false,
     saveUninitialized: false,
-    store: new MongoStore({ mongooseConnection: mongoose.connection }),
-    cookie: {maxAge: 180 * 60 * 1000}
+    store: new MemoryStore({ checkPeriod: 86400000 }),
+    cookie: {maxAge: 86400000}
 }));
 app.use(function(req, res, next){
     res.locals.login = req.isAuthenticated();
@@ -42,11 +43,10 @@ app.engine('hbs',exphbs({
     extname: 'hbs',
     defaultLayout:'mainLayout',
     layoutDir: __dirname + '/views/'
-
 }));
 app.set('view engine','hbs');
-app.listen(3000,()=> {
-    console.log("server running on the port 3000");
+app.listen(port,()=> {
+    console.log("server running on the port " +port);
 });
 app.use('/',index);
 // app.use('/user',user);

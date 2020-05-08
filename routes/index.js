@@ -16,11 +16,11 @@ router.use(flash());
 router.use(passport.initialize());
 router.use(passport.session());
 router.use(session({
-    secret: 'mysupersecret',
+    secret: 'secret',
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
     // store: new MongoStore({ mongooseConnection: mongoose.connection }),
-    // cookie: {maxAge: 180 * 60 * 1000}
+    cookie: {maxAge: 180 * 60 * 1000}
 }));
 mongoose.set('useFindAndModify',false);
 router.get('/',(req , res)=>{

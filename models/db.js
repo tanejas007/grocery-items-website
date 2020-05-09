@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/ecommerceOrders',{useNewUrlParser: true,useUnifiedTopology: true},(err)=>{
+const connect = require('connect');
+mongoose.connect('mongodb+srv://mongodbuser:Welcome24@tanejas007-rywcr.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true,useUnifiedTopology: true},(err)=>{
     if(!err){
         console.log("mongodb connected");
     }

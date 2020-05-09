@@ -39,223 +39,7 @@ body {
     text-decoration: none;
     color: white;
 }
-@media (max-width: 800px){
-   .navbar{
-      width: 100%;
-      /* line-height: normal; */
-      max-height: 13%;
-      background-color: black;
-      border-radius: 17px;
-   }
-   .navbar li{
-       float: left;
-       list-style: none;
-       padding: 3px 3px;
-       margin: 6px 2px;
-   }
-   
-   .navbar ul li a:hover{
-       /* background-color: seagreen; */
-       color: slateblue;
-   }
-   .navbar li a{
-      padding: 3px 3px;
-      text-decoration: none;
-      color: white;
-  }
-  .content-section {
-   margin: 0.5em;
-}
 
-.container {
-   max-width: 1300px;
-   margin: 20% ;
-   padding: 8 8em;
-}
-  .shop-items .shop-item .show-details a{
-   text-align: center;
-   align-items: center;
-   display: block;
-   width: 148px;
-   height: 40px;
-   /* padding: 12px 12px; */
-   /* margin-bottom : 40px; */
-   margin-left: 10px;
-   /* margin-le; */
-   font-size: 20px;
-   color:white;
-   text-decoration: none;
-   background-color: blue;
-   border:2px solid black;
-   border-radius: 6px;
-   position: absolute;
-}
-.show-details a:hover{
-   background-color: violet;
-   text-decoration: none;
-}
-.shop-items .shop-item .shop-item-title{
-   margin:40px;
-   margin-bottom: 0px;
-   /* margin-top: 10px; */
-   justify-content: center;
-}
-  .abcdi{
-   width: 100%;
-   height:100%;
-   height: 100vh;
-   /* background: url("../img/background.jpg"); */
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   width:580px;
-   height:520px;
-   }
-   .shop-items {
-      /* margin-left: 10px; */
-      margin: 10%;
-   }
-   .shopping {
-      display: d-flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-   }
-   .abcd a{
-      color: white;
-      text-decoration: none;
-      background-color: #262626;
-      border: 2px solid black;
-      border-radius: 6px;
-      display: inline-block;
-      position: absolute;
-      top: 55%;
-      left: 15%;
-      width: 150px;
-      height: 43px;
-      text-align: center;
-   }
-   .abcdi1 a{
-      color: white;
-      text-decoration: none;
-      background-color: royalblue;
-      border: 2px solid black;
-      border-radius: 6px;
-      /* display: inline-block; */
-      /* position: absolute; */
-      top: 55%;
-      left: 95%;
-      /* margin-right: initial; */
-      width: 20px;
-      height: 17px;
-      text-align: right;
-      float: right;
-    }
-    .checkout {
-      /* float: left; */
-      position: absolute;
-      position: initial;
-      border: 2px solid black;
-      border-radius: 6px;
-      /* margin-top: 15px;
-      margin-left: 10px;
-      margin-right: 20px;
-      margin-bottom: 20px; */
-      /* margin: 10px; */
-      /* align-items: left; */
-      /* width:10px; */
-      /* height: 70px; */
-      /* text-align: left; */
-   }
-   
-   .checkout input {
-      margin-left: 10px;
-   }
-   .checkout .name label {
-      font-weight: bold;
-      color:black;
-     
-      font-size: larger;
-      margin-left: 10px;
-   }
-   .checkout .address label {
-      font-weight: bold;
-      color:black;
-    
-      font-size: larger;
-      margin-left: 10px;
-   }
-   .checkout .card_name label {
-      font-weight: bold;
-      color:black;
-      font-size: larger;
-      margin-left: 10px;
-   }
-   .checkout .card_number label {
-      font-weight: bold;
-      color:black;
-      font-size: larger;
-      margin-left: 10px;
-   }
-   
-   .checkout .card_expiry label {
-      font-weight: bold;
-      color:black;
-      font-size: larger;
-      margin-left: 10px;
-   }
-   
-   .checkout .card_year label {
-      font-weight: bold;
-      color:black;
-      font-size: larger;
-      margin-left: 10px;
-   }
-   
-   .checkout .cvc label {
-      font-weight: bold;
-      color:black;
-      font-size: larger;
-      margin-left: 10px;
-   }
-   
-   .checkout button {
-      text-align: center;
-      color: white;
-      border: 2px solid black;
-      border-radius: 6px;
-      background-color: rgb(0, 77, 128);
-      align-items: center;
-      width: 170px;
-      display: inline-block;
-      position: absolute;
-      margin-left: 10px;
-   }
-   .checkout .cash a {
-      text-align: center;
-      color: white;
-      border: 2px solid black;
-      border-radius: 6px;
-      background-color: rgb(0, 77, 128);
-      align-items: center;
-      width: 173px;
-      height: 37px;
-      display: inline-block;
-      position: absolute;
-      margin-left: 10px;
-      text-decoration: none;
-   }
-   .checkout .cash a :hover{
-      /* background-color: green; */
-      /* background: green; */
-      color: white;
-   }
-   .checkout .or{
-      text-align: center;
-      font-size: 22px;
-      align-items: center;
-      margin-left: 15px;
-   }
-}
 .navbar .dropdown{
    color: white;
    float: left;
@@ -715,7 +499,7 @@ a{
    margin-bottom: 80px;
    align-items: center;
    width:520px;
-   height: 640px;
+   height: 740px;
    text-align: left;
 }
 
@@ -765,6 +549,7 @@ a{
    background-color: rgb(0, 77, 128);
    align-items: center;
    width: 170px;
+   font-size:20px;
    display: inline-block;
    position: absolute;
    margin-left: 50px;
@@ -776,18 +561,20 @@ a{
    border-radius: 6px;
    background-color: rgb(0, 77, 128);
    align-items: center;
-   width: 173px;
-   height: 37px;
-   display: inline-block;
+   width: 185px;
+   font-size: 25px;
+   height: 45px;
+   display: block;
    position: absolute;
-   margin-left: 50px;
+   font-size: 20px;
+   margin-left: 1px;
    text-decoration: none;
 }
-.checkout .cash a :hover{
-   /* background-color: green; */
-   /* background: green; */
+.checkout .cash a:hover{
+   background-color: darkgreen;
    color: white;
 }
+
 .checkout .or{
    text-align: center;
    font-size: 22px;
@@ -866,4 +653,442 @@ a{
 .cash h4  i{
    text-align: center;
    margin-left: 40px;
+}
+.navbar ul li a i {
+   color:white;
+}
+
+@media screen and (max-width: 350px){
+   .navbar{
+      width: 100%;
+      /* line-height: normal; */
+      max-height: 13%;
+      background-color: black;
+      border-radius: 17px;
+   }
+   .navbar li{
+       float: left;
+       list-style: none;
+       padding: 3px 3px;
+       margin: 6px 2px;
+   }
+   
+   .navbar ul li a:hover{
+       /* background-color: seagreen; */
+       color: slateblue;
+   }
+   .navbar li a{
+      padding: 3px 3px;
+      text-decoration: none;
+      color: white;
+  }
+  .content-section {
+   margin: 0.5em;
+}
+
+.container {
+   max-width: 1300px;
+   margin: 20% ;
+   padding: 8 8em;
+}
+  .shop-items .shop-item .show-details a{
+   text-align: center;
+   align-items: center;
+   display: block;
+   width: 148px;
+   height: 40px;
+   /* padding: 12px 12px; */
+   /* margin-bottom : 40px; */
+   margin-left: 10px;
+   /* margin-le; */
+   font-size: 20px;
+   color:white;
+   text-decoration: none;
+   background-color: blue;
+   border:2px solid black;
+   border-radius: 6px;
+   position: absolute;
+}
+.show-details a:hover{
+   background-color: violet;
+   text-decoration: none;
+}
+.shop-items .shop-item .shop-item-title{
+   margin:40px;
+   margin-bottom: 0px;
+   /* margin-top: 10px; */
+   justify-content: center;
+}
+  .abcdi{
+   width: 100%;
+   height:100%;
+   height: 100vh;
+   /* background: url("../img/background.jpg"); */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width:580px;
+   height:520px;
+   }
+   .shop-items {
+      /* margin-left: 10px; */
+      margin: 10%;
+   }
+   .shopping {
+      display: d-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .abcd a{
+      color: white;
+      text-decoration: none;
+      background-color: #262626;
+      border: 2px solid black;
+      border-radius: 6px;
+      display: inline-block;
+      position: absolute;
+      top: 55%;
+      left: 15%;
+      width: 150px;
+      height: 43px;
+      text-align: center;
+   }
+   .abcdi1 a{
+      color: white;
+      text-decoration: none;
+      background-color: royalblue;
+      border: 2px solid black;
+      border-radius: 6px;
+      /* display: inline-block; */
+      /* position: absolute; */
+      top: 55%;
+      left: 95%;
+      /* margin-right: initial; */
+      width: 20px;
+      height: 17px;
+      text-align: right;
+      float: right;
+    }
+    .checkout {
+      /* float: left; */
+      position: absolute;
+      position: initial;
+      border: 2px solid black;
+      border-radius: 6px;
+      /* margin-top: 15px;
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-bottom: 20px; */
+      /* margin: 10px; */
+      /* align-items: left; */
+      /* width:10px; */
+      /* height: 70px; */
+      /* text-align: left; */
+   }
+   
+   .checkout input {
+      margin-left: 10px;
+   }
+   .checkout .name label {
+      font-weight: bold;
+      color:black;
+     
+      font-size: larger;
+      margin-left: 10px;
+   }
+   .checkout .address label {
+      font-weight: bold;
+      color:black;
+    
+      font-size: larger;
+      margin-left: 10px;
+   }
+   .checkout .card_name label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   .checkout .card_number label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout .card_expiry label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout .card_year label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout .cvc label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout button {
+      text-align: center;
+      color: white;
+      border: 2px solid black;
+      border-radius: 6px;
+      background-color: rgb(0, 77, 128);
+      align-items: center;
+      width: 170px;
+      display: inline-block;
+      position: absolute;
+      margin-left: 10px;
+   }
+   .checkout .cash a {
+      text-align: center;
+      color: white;
+      border: 2px solid black;
+      border-radius: 6px;
+      background-color: rgb(0, 77, 128);
+      align-items: center;
+      width: 173px;
+      height: 37px;
+      display: inline-block;
+      position: absolute;
+      margin-left: 10px;
+      text-decoration: none;
+   }
+   .checkout .cash a :hover{
+      /* background-color: green; */
+      /* background: green; */
+      color: white;
+   }
+   .checkout .or{
+      text-align: center;
+      font-size: 22px;
+      align-items: center;
+      margin-left: 15px;
+   }
+}
+@media screen and (width: 550px){
+   .navbar{
+      width: 100%;
+      /* line-height: normal; */
+      max-height: 13%;
+      background-color: black;
+      border-radius: 17px;
+   }
+   .navbar li{
+       float: left;
+       list-style: none;
+       padding: 3px 3px;
+       margin: 6px 2px;
+   }
+   
+   .navbar ul li a:hover{
+       /* background-color: seagreen; */
+       color: slateblue;
+   }
+   .navbar li a{
+      padding: 3px 3px;
+      text-decoration: none;
+      color: white;
+  }
+  .content-section {
+   margin: 0.5em;
+}
+
+.container {
+   max-width: 1300px;
+   margin: 20% ;
+   padding: 8 8em;
+}
+  .shop-items .shop-item .show-details a{
+   text-align: center;
+   align-items: center;
+   display: block;
+   width: 148px;
+   height: 40px;
+   /* padding: 12px 12px; */
+   /* margin-bottom : 40px; */
+   margin-left: 10px;
+   /* margin-le; */
+   font-size: 20px;
+   color:white;
+   text-decoration: none;
+   background-color: blue;
+   border:2px solid black;
+   border-radius: 6px;
+   position: absolute;
+}
+.show-details a:hover{
+   background-color: violet;
+   text-decoration: none;
+}
+.shop-items .shop-item .shop-item-title{
+   margin:40px;
+   margin-bottom: 0px;
+   /* margin-top: 10px; */
+   justify-content: center;
+}
+  .abcdi{
+   width: 100%;
+   height:100%;
+   height: 100vh;
+   /* background: url("../img/background.jpg"); */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width:580px;
+   height:520px;
+   }
+   .shop-items {
+      /* margin-left: 10px; */
+      margin: 10%;
+   }
+   .shopping {
+      display: d-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .abcd a{
+      color: white;
+      text-decoration: none;
+      background-color: #262626;
+      border: 2px solid black;
+      border-radius: 6px;
+      display: inline-block;
+      position: absolute;
+      top: 55%;
+      left: 15%;
+      width: 150px;
+      height: 43px;
+      text-align: center;
+   }
+   .abcdi1 a{
+      color: white;
+      text-decoration: none;
+      background-color: royalblue;
+      border: 2px solid black;
+      border-radius: 6px;
+      /* display: inline-block; */
+      /* position: absolute; */
+      top: 55%;
+      left: 95%;
+      /* margin-right: initial; */
+      width: 20px;
+      height: 17px;
+      text-align: right;
+      float: right;
+    }
+    .checkout {
+      /* float: left; */
+      position: absolute;
+      position: initial;
+      border: 2px solid black;
+      border-radius: 6px;
+      /* margin-top: 15px;
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-bottom: 20px; */
+      /* margin: 10px; */
+      /* align-items: left; */
+      /* width:10px; */
+      /* height: 70px; */
+      /* text-align: left; */
+   }
+   
+   .checkout input {
+      margin-left: 10px;
+   }
+   .checkout .name label {
+      font-weight: bold;
+      color:black;
+     
+      font-size: larger;
+      margin-left: 10px;
+   }
+   .checkout .address label {
+      font-weight: bold;
+      color:black;
+    
+      font-size: larger;
+      margin-left: 10px;
+   }
+   .checkout .card_name label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   .checkout .card_number label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout .card_expiry label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout .card_year label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout .cvc label {
+      font-weight: bold;
+      color:black;
+      font-size: larger;
+      margin-left: 10px;
+   }
+   
+   .checkout button {
+      text-align: center;
+      color: white;
+      border: 2px solid black;
+      border-radius: 6px;
+      background-color: rgb(0, 77, 128);
+      align-items: center;
+      width: 170px;
+      display: inline-block;
+      position: absolute;
+      margin-left: 10px;
+   }
+   .checkout .cash a {
+      text-align: center;
+      color: white;
+      border: 2px solid black;
+      border-radius: 6px;
+      background-color: rgb(0, 77, 128);
+      align-items: center;
+      width: 173px;
+      height: 37px;
+      display: inline-block;
+      position: absolute;
+      margin-left: 10px;
+      text-decoration: none;
+   }
+   .checkout .cash a :hover{
+      /* background-color: green; */
+      /* background: green; */
+      color: white;
+   }
+   .checkout .or{
+      text-align: center;
+      font-size: 22px;
+      align-items: center;
+      margin-left: 15px;
+   }
 }
